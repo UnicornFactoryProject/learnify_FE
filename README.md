@@ -1,7 +1,7 @@
 
 # React Application
 
-Leanify is an e-learning platform designed with a strong emphasis on clean code practices and user-friendly experience. Please follow the instructions below to set up and run the application."
+Leanify is an e-learning platform designed with a strong emphasis on clean code practices and user-friendly experience. Please follow the instructions below to set up and run the application."`
 
 ## Getting Started
 

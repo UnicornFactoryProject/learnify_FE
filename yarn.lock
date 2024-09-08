@@ -2373,6 +2373,19 @@
   resolved "https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.2.0.tgz"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
+"@videosdk.live/js-sdk@0.0.95":
+  version "0.0.95"
+  resolved "https://registry.yarnpkg.com/@videosdk.live/js-sdk/-/js-sdk-0.0.95.tgz#20fbfc6ef2b6883aafb1d323219efb6952f300e6"
+  integrity sha512-iyfFtMMW5MSLGJLX84DUa7XfzPe6e8K/OkjeWYBDmANwi8zknsTtVFe3Vv6xKpUfmnX//j+/DkE/mVNhnBe4rA==
+
+"@videosdk.live/react-sdk@^0.1.99":
+  version "0.1.99"
+  resolved "https://registry.yarnpkg.com/@videosdk.live/react-sdk/-/react-sdk-0.1.99.tgz#034ed30ef9c56e0c535708fc0864cbc833ed93f0"
+  integrity sha512-XtlnJ7FEN09yX6HbKLYAOfSAcGEb7irjRE5o53VSniD4LJQxo1kg8/Uo8qmVrrx4ZPsbaRBtnAviI9y+9gOvKQ==
+  dependencies:
+    "@videosdk.live/js-sdk" "0.0.95"
+    events "^3.3.0"
+
 "@webassemblyjs/ast@1.12.1", "@webassemblyjs/ast@^1.12.1":
   version "1.12.1"
   resolved "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.12.1.tgz"
@@ -4588,7 +4601,7 @@ eventemitter3@^4.0.0:
   resolved "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
-events@^3.2.0:
+events@^3.2.0, events@^3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/events/-/events-3.3.0.tgz"
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
