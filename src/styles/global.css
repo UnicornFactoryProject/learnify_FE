@@ -58,7 +58,6 @@ input:-webkit-autofill:focus {
     .title-text {
       @apply text-center 
     }
-    primary-te
     .secondary-text{
       @apply text-secondary-100
     }
