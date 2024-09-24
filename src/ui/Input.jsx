@@ -1,23 +1,27 @@
-//Custom Input component
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Input = ({
   label,
-  type,
+  type = 'text',
   onChange,
-  value,
-  required,
+  value = '',  // Default value to ensure `value.length` is always valid
+  required = false,
   errorText,
-  className,
+  className = '',
   ...props
 }) => {
   const [hasText, setHasText] = useState(value.length > 0);
   const [isFocused, setIsFocused] = useState(false);
 
+  // Update `hasText` state when `value` changes from parent
+  useEffect(() => {
+    setHasText(value.length > 0);
+  }, [value]);
+
   return (
     <div className="mb-1">
       {label && (
-        <label className="block text-[24px] font-medium text-gray-700 mb-1">
+        <label className="block text-[18px] font-medium text-gray-700 mb-1">
           {label} {required && <span className="text-red-500">*</span>}
         </label>
       )}

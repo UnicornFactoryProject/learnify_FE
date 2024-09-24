@@ -14,7 +14,7 @@ const Button = ({
   return (
     <button
       disabled={disabled || isLoading}
-      className={`bg-secondary-100 rounded-md text-white py-2 px-5 ${className} ${
+      className={`bg-secondary-100 rounded-md text-white font-semi-bold py-2 px-5 ${className} ${
         disabled ? 'disabled:bg-secondary-100 disabled:cursor-not-allowed' : ''
       } w-fit`}
       onClick={!isLoading ? onClick : undefined}
