@@ -43,6 +43,7 @@ export const OtpPage = () => {
       setOtpError('Please Enter OTP')
     }
     console.log('OTP Submitted Successfuly')
+    navigate('/change-password')
   }
 
   return (

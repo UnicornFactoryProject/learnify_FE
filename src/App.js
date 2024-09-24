@@ -7,17 +7,21 @@ import Home from './pages/Home';
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
 import NotFound from './pages/NotFound';
+import { OtpPage } from './pages/Auth/OtpPage';
+import { ChangePassword } from './pages/Auth/ChangePassword';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
         <Route path="*" element={<NotFound />} />
         
         {/* Route that shouldn't be accessible if the user is logged in */}
         <Route element={<PublicRoute />}>
           <Route path="/login" element={<Login />} />
+          <Route path="/otp" element={<OtpPage />} />
+          <Route path="/change-password" element={<ChangePassword />} />
           <Route path="/register" element={<Register />} />
         </Route>
 
