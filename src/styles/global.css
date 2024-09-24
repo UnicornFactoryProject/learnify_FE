@@ -53,11 +53,12 @@ input:-webkit-autofill:focus {
   }
   @layer utilities {
     .title-header {
-      @apply text-[38px] text-center font-bold;
+      @apply text-[38px] text-center font-bold text-primary-300;
     }
     .title-text {
       @apply text-center 
     }
+    primary-te
     .secondary-text{
       @apply text-secondary-100
     }
