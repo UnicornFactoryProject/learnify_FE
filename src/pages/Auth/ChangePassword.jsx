@@ -30,7 +30,7 @@ export const ChangePassword = () => {
           <img src={logo} alt="" className="w-[150px] h-auto" />
         </div>
         <div>
-          <h2 className='title-header'>SET NEW PASSWORD</h2>
+          <h2 className='title-header'>Set new password</h2>
           <p className='title-text text-xl'>Must be 8 letters</p>
         </div>
         <div className='flex flex-col gap-3'>

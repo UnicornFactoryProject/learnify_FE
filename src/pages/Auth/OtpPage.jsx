@@ -53,7 +53,7 @@ export const OtpPage = () => {
           <img src={logo} alt="" className="w-[150px] h-auto" />
         </div>
         <div>
-          <h2 className='title-header'> PASSWORD RESET</h2>
+          <h2 className='title-header'> Password reset</h2>
           <p className='title-text text-xl'> We sent a code to <span className='text-secondary-100'>udyfinbarr@gmail.com</span></p>
         </div>
         <div className="flex flex-col items-center justify-center gap-3">
