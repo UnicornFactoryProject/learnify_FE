@@ -21,7 +21,7 @@ const Input = ({
   return (
     <div className="mb-1">
       {label && (
-        <label className="block text-[18px] font-medium text-gray-700 mb-1">
+        <label className="block text-[15px] font-medium text-gray-700 mb-1">
           {label} {required && <span className="text-red-500">*</span>}
         </label>
       )}
