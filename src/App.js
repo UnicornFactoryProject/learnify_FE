@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
 import NotFound from './pages/NotFound';
+import UploadProfileImage from './pages/UploadProfileImage';
+import ForgotPassword from './pages/Auth/ForgotPassowrd';
 import { OtpPage } from './pages/Auth/OtpPage';
 import { ChangePassword } from './pages/Auth/ChangePassword';
 
@@ -23,11 +25,13 @@ function App() {
           <Route path="/otp" element={<OtpPage />} />
           <Route path="/change-password" element={<ChangePassword />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Route>
 
         {/* Route that shouldn't be accessible if the user is not logged in */}
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/register/upload-image" element={<UploadProfileImage />} />
         </Route>
       </Routes>
     </Router>
