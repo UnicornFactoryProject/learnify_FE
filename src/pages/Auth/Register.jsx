@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Formik } from "formik";
 import logo from '../../assets/logo.svg';
 import signup from '../../assets/signup-image.svg';
-import Input from "../../ui/Input"; // Ensure this component correctly handles props
-import { SignupSchema } from '../../validations/Schemas'; // Ensure the path is correct
+import Input from "../../ui/Input"; 
+import { SignupSchema } from '../../validations/Schemas'; 
 import Button from "../../ui/Button";
 
 const Register = () => {
@@ -18,8 +18,8 @@ const Register = () => {
 
   const submit = async (values, { setSubmitting }) => {
     setIsPending(true);
-    setErrorMessage(''); // Clear previous errors
-    setSuccessMessage(''); // Clear previous success message
+    setErrorMessage(''); 
+    setSuccessMessage(''); 
     try {
       // Validate the values against the schema
       await SignupSchema.validate(values, { abortEarly: false });
@@ -32,11 +32,11 @@ const Register = () => {
     } catch (error) {
       // Handle validation errors
       if (error.name === 'ValidationError') {
-        const errorMessages = error.errors.join("\n"); // Collect errors
+        const errorMessages = error.errors.join("\n"); 
         setErrorMessage(errorMessages);
       } else {
         console.error('Error during submission:', error);
-        setErrorMessage('An unexpected error occurred. Please try again.'); // General error message
+        setErrorMessage('An unexpected error occurred. Please try again.');
       }
     } finally {
       setSubmitting(false);
